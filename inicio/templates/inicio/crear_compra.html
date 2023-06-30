@@ -1,0 +1,31 @@
+{% extends 'base.html' %} 
+
+{% block title_head %}
+<title>Crear Compra</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+Crear Compra
+{% endblock h1_header %}
+
+{% block contenido %}
+
+<form action="" method="POST">
+
+    {% csrf_token %}
+
+    <p>
+        Cantidad:
+        <input type="number" name="cantidad"> 
+    </p>
+    
+    <p>
+        Producto:
+        <input type="text" name="producto">
+    </p>
+
+    <button>Crear</button> 
+
+</form>
+
+{% endblock contenido %}
